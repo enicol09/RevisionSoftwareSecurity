@@ -3,3 +3,32 @@ Revision 2 - Notes
 2. RSA
 3. Mathematical Background
 4. ECB
+
+#DES Algorithm
+--------------------------
+1. Learn the basic details of DES for the exam 
+  - Why DES is considered insecure nowadays?
+  - What is the key length? - key size if 56 bits? 
+  - Why is bits? - because it makes it easier to be applied in hardware.
+2. High-Level Overview of Des
+  - What is a symmetric Cypher? You have to talk about the keys, you have to say that we use a single key to encrypt and decrypt (SAME key)
+  - What we define as a block cypher? (Here you have to remember that we try to break the message into a series of blocks - and in each block we have encryption and decryption)
+  - What is the DES block size? (64 bits)
+  - Important encryption operations (2) - Confussion and Diffusion (YOU HAVE TO KNOW THIS REALLY WELL, 100% THA EINAI MESA)
+    -> Kata to confussion i shesi tou kleidiou mazi me to teliko apotelesma ( to ciphertext mas) allazei. Και πως επιτυγχάνεται αυτό ? Μέσω του substitution.!
+    -> Κατά το diffusion, το τι συμβαίνει είναι ότι η αλλαγή σε ένα σύμβολο τότε μπορεί να έχει μεγάλη επιρροή σε όλο το ciphertext. Kρύβει ουσιαστικά την πιθανότητα να κατανοήσουμε στατιστικά το ciphertext.
+       Επιτυγχάνεται με την χρήση του permutation (ένα παράδειγμα αν θυμηθούμε είναι το transposition cipher) 
+
+https://www.geeksforgeeks.org/difference-between-confusion-and-diffusion/
+
+-> We have rounds of Diffusion and Confussions that lead to the product ciphers.
+   - How many rounds we have in DES and what is special about it? - We have 16 rounds in DES and in each one we are using a different key (but be careful this is not the initial key!)
+   - What is avalanche effect in Cryptography? alanche effect is considered as one of the desirable property of any encryption algorithm. A slight change in either the key or the plain-text 
+     should result in a significant change in the cipher-text. This property is termed as avalanche effect.  https://www.geeksforgeeks.org/avalanche-effect-in-cryptography/
+
+Slide 12,12 -> Very important overall -> Key scheduling = θα μας φτιάξει 15 rounds. + initial key.
+
+-> Explain a feistel network in a nutshell = Please know how to draw this, it has been asked before.
+
+
+
